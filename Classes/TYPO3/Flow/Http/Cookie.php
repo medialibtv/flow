@@ -397,6 +397,6 @@ class Cookie
             $attributes .= '; HttpOnly';
         }
 
-        return $cookiePair . $attributes;
+        return $cookiePair . $attributes . '; Secure; SameSite=Strict';
     }
 }
